@@ -1,2 +1,69 @@
-# pelletpulse
-ESP which polls data from e.g. Ökofen and send data to an HTTP Endpoint e.g. HeatGeniusAI
+# Pellet Pulse
+
+**Pellet Pulse** is an ESP32-based monitoring system for Ökofen pellet heating systems. It retrieves live data from the heater's internal HTTP interface and publishes it for use in smart home automation, energy tracking, and more. The system is designed to be standalone, Wi-Fi enabled, and easily configurable via a built-in web interface.
+
+---
+
+## 🔧 Features
+
+- 📶 ESP32 firmware with OTA update support  
+- 🔌 Connects to Ökofen pellet heating systems via HTTP  
+- 📊 Parses heating metrics like temperature, power, energy, and storage levels  
+- ☁️ Sends data to a configurable HTTP endpoint (e.g., Supabase, Node-RED)  
+- 🌐 Web interface for:
+  - Configuring IP, port, password, and polling interval
+  - Viewing live status
+  - Testing API key and data sending
+- 💾 Persistent configuration via LittleFS
+
+
+---
+
+## 🧰 Hardware Requirements
+
+- ESP32 development board (USB-C recommended)  
+- Case optional
+
+---
+
+## 💻 Software Requirements
+
+- Arduino IDE (or PlatformIO)  
+- ESP32 board support installed  
+- Libraries:
+  - `WiFi.h`, `WebServer.h`, `HTTPClient.h`
+  - `ArduinoJson`
+  - `Update.h`
+  - `LittleFS`
+  
+
+---
+
+## 🚀 Getting Started
+
+1. **Flash the Firmware**  
+   Upload the code to your ESP32 via Arduino IDE or PlatformIO.
+
+2. **Wi-Fi Setup**  
+   On first boot, connect to the ESP32's access point (`PelletPulse`) and open the configuration portal.
+
+3. **Device Configuration**  
+   Enter your Ökofen IP, port, password, polling interval, and endpoint URL.
+
+4. **Save and Start**  
+   After saving, the ESP32 reboots and begins polling and uploading data.
+
+---
+
+## 🧾 Example JSON Payload
+
+🛡️ Security
+API key-based authentication via Authorization or x-api-key header
+
+Configuration is stored securely on-device with LittleFS
+
+🤝 Contributing
+Pull requests, bug reports, and feature requests are welcome. Fork the repo and help us improve Pellet Pulse!
+
+📜 License
+This project is licensed under the MIT License.
