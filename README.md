@@ -26,6 +26,9 @@
 ---
 
 - Status Page:
+
+![image](https://github.com/user-attachments/assets/c5801895-64ad-4f66-875a-ace3f345951b)
+
 ---
 
 - OTA Update:
@@ -59,10 +62,10 @@
    Upload the code to your ESP32 via Arduino IDE or PlatformIO.
 
 2. **Wi-Fi Setup**  
-   On first boot, connect to the ESP32's access point (`PelletPulse`) and open the configuration portal.
+   On first boot, connect to the ESP32's access point (`PelletPulse`) and open the configuration portal. Connect to your Wi-Fi.
 
 3. **Device Configuration**  
-   Enter your Ökofen IP, port, password, polling interval, and endpoint URL.
+   Browse to http://pelletpulse.local/ Enter your Ökofen IP, port, password, polling interval, and endpoint URL
 
 4. **Save and Start**  
    After saving, the ESP32 reboots and begins polling and uploading data.
