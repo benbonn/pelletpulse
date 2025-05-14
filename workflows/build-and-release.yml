@@ -1,0 +1,38 @@
+name: Build and Release ESP32 Firmware
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger only on tag pushes like v1.4
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Set up Arduino CLI
+      uses: arduino/setup-arduino-cli@v1
+      with:
+        version: latest
+
+    - name: Install ESP32 platform
+      run: |
+        arduino-cli core update-index
+        arduino-cli core install esp32:esp32
+
+    - name: Compile firmware
+      run: |
+        arduino-cli compile --fqbn esp32:esp32:esp32doit-devkit-v1 pelletpulse.ino --output-dir build
+
+    - name: Rename .bin to firmware.bin
+      run: mv build/*.bin build/firmware.bin
+
+    - name: Upload firmware to GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: build/firmware.bin
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
