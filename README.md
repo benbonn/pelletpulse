@@ -6,7 +6,7 @@
 
 ## 🔧 Features
 
-- 📶 ESP32 firmware with OTA update support  
+  
 - 🔌 Connects to Ökofen pellet heating systems via HTTP  
 - 📊 Parses heating metrics like temperature, power, energy, and storage levels  
 - ☁️ Sends data to a configurable HTTP endpoint (e.g., Supabase, Node-RED)  
@@ -14,9 +14,23 @@
   - Configuring IP, port, password, and polling interval
   - Viewing live status
   - Testing API key and data sending
+- 📶 ESP32 firmware with OTA update support
 - 💾 Persistent configuration via LittleFS
+---
 
+## 💻 Screenshots
 
+- Configuration:
+
+![image](https://github.com/user-attachments/assets/cec63fcf-e1e4-4e39-8c21-353e84c1a1c9)
+---
+
+- Status Page:
+---
+
+- OTA Update:
+
+![image](https://github.com/user-attachments/assets/bdb65ade-2775-4e10-a32b-0f002a90f270)
 ---
 
 ## 🧰 Hardware Requirements
