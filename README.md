@@ -36,6 +36,12 @@
 ![image](https://github.com/user-attachments/assets/bdb65ade-2775-4e10-a32b-0f002a90f270)
 ---
 
+- Example result in HeatGeniusAI:
+- 
+![image](https://github.com/user-attachments/assets/0ab6aaa1-8568-4977-bb58-c764cff8a1a9)
+
+  ---
+
 ## 🧰 Hardware Requirements
 
 - ESP32 development board (USB-C recommended)  
