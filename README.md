@@ -9,7 +9,7 @@
   
 - 🔌 Connects to Ökofen pellet heating systems via HTTP  
 - 📊 Parses heating metrics like temperature, power, energy, and storage levels  
-- ☁️ Sends data to a configurable HTTP endpoint (e.g., Supabase, Node-RED)  
+- ☁️ Sends data to a configurable HTTP endpoint (e.g. HeatGeniusAI, Supabase, Airtable, Node-RED etc.)  
 - 🌐 Web interface for:
   - Configuring IP, port, password, and polling interval
   - Viewing live status
