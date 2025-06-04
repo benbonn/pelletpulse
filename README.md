@@ -27,7 +27,8 @@
 
 - Status Page:
 
-![image](https://github.com/user-attachments/assets/c5801895-64ad-4f66-875a-ace3f345951b)
+![image](https://github.com/user-attachments/assets/b30b3302-306f-46a6-97c5-269234ab85e8)
+
 
 ---
 
