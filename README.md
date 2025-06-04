@@ -1,6 +1,10 @@
 # Pellet Pulse
 
-**Pellet Pulse** is an ESP32-based monitoring system for Ökofen pellet heating systems. It retrieves live data from the heater's internal HTTP interface and publishes it for use in smart home automation, energy tracking, and more. The system is designed to be standalone, Wi-Fi enabled, and easily configurable via a built-in web interface.
+**Pellet Pulse** is an ESP32-based data bridge for Ökofen pellet heating systems. It retrieves live data from the heater's internal HTTP interface and publishes it for use in smart home automation, energy tracking, and more. The system is designed to be standalone, Wi-Fi enabled, and easily configurable via a built-in web interface.
+
+![image](https://github.com/user-attachments/assets/8aad9d49-3f51-4e46-960d-e6317734aa4b)
+
+
 
 ---
 
@@ -38,7 +42,7 @@
 ---
 
 - Example result in HeatGeniusAI:
-- 
+  
 ![image](https://github.com/user-attachments/assets/0ab6aaa1-8568-4977-bb58-c764cff8a1a9)
 
   ---
