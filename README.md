@@ -11,9 +11,9 @@
 - 📊 Parses heating metrics like temperature, power, energy, and storage levels  
 - ☁️ Sends data to a configurable HTTP endpoint (e.g. HeatGeniusAI, Supabase, Airtable, Node-RED etc.)  
 - 🌐 Web interface for:
-  - Configuring IP, port, password, and polling interval
+  - Configuring IP, port, password, and polling interval (Your Ökofen heater)
+  - Configuring, endpoint, API key and format  
   - Viewing live status
-  - Testing API key and data sending
 - 📶 ESP32 firmware with OTA update support
 - 💾 Persistent configuration via LittleFS
 ---
@@ -44,7 +44,7 @@
 
 ## 🧰 Hardware Requirements
 
-- ESP32 development board (USB-C recommended)  
+- ESP32 development board 
 - Case optional
 
 ---
